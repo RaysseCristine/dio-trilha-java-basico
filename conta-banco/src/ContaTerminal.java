@@ -3,21 +3,26 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        //TODO: conhecer e importar a classe Scanner
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
-
         //Exibir as mensagens para o nosso usuário
-        System.out.println("Por favor, digite o número da Agência !");
-        int numero = sc.nextInt();
+        System.out.println("Por favor, digite o número da agencia: ");
+        int agencia = sc.nextInt();
 
-        //Obter pela classe Scanner os valores digitados no terminal
-        numero = 1021;
-        String agencia = "067-8";
-        String nomeCliente = "MARIO ANDRADE";
-        Double saldo = 237.48;
+        System.out.println("Por favor, digite o número da conta: ");
+        String conta = sc.next();
+
+        System.out.println("Por favor, digite o nome do cliente: ");
+        String nomeCliente = sc.next();
+
+        System.out.println("Por favor, digite o valor de depósito: ");
+        Double saldo = sc.nextDouble();
+
+        sc.close();
 
         //Exibir a mensagem conta criada
-        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo R$" + saldo +" já está disponível para saque.");
+        System.out.println("Olá " + nomeCliente + 
+        ", obrigado por criar uma conta em nosso banco, sua agência é "
+         + agencia + ", conta " + conta + " e seu saldo R$" + saldo +" já está disponível para saque.");
     }
 }
