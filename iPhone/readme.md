@@ -1,4 +1,4 @@
-# [DIO](www.dio.me) - Trilha Java Básico
+# [DIO](www.dio.me) - Trilha Java Básico :hotsprings:
 
 ## Intrutor
 - [Gleyson Sampaio](https://github.com/glysns)
